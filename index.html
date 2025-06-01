@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphic Color Palettes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Background Elements -->
+        <div class="background">
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+            <div class="bg-shape shape-3"></div>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <div class="logo">
+                    <span class="logo-dot dot-1"></span>
+                    <span class="logo-dot dot-2"></span>
+                    <span class="logo-dot dot-3"></span>
+                </div>
+                <h1>Palette<span>Glass</span></h1>
+            </div>
+            
+            <nav class="main-nav">
+                <button class="nav-item active" data-view="grid">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    <span>All Palettes</span>
+                </button>
+                <button class="nav-item" data-view="favorites">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+                    <span>Favorites</span>
+                </button>
+                <button class="nav-item" data-view="trending">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    <span>Trending</span>
+                </button>
+            </nav>
+            
+            <div class="visualization-selector">
+                <h3>Visualization</h3>
+                <div class="viz-options">
+                    <button class="viz-option active" data-viz="fluid-waves">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg>
+                        <span>Fluid Waves</span>
+                    </button>
+                    <button class="viz-option" data-viz="glass-morphism">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                        <span>Glass Morphism</span>
+                    </button>
+                    <button class="viz-option" data-viz="gradient-blend">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        <span>Gradient Blend</span>
+                    </button>
+                    <button class="viz-option" data-viz="neon-glow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"></path><path d="m4.93 10.93 1.41 1.41"></path><path d="M2 18h2"></path><path d="M20 18h2"></path><path d="m19.07 10.93-1.41 1.41"></path><path d="M22 22H2"></path><path d="m8 22 4-10 4 10"></path></svg>
+                        <span>Neon Glow</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="theme-toggle-container">
+                <button id="theme-toggle" class="theme-toggle">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <span class="toggle-text">Dark Mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="search-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" id="search-input" placeholder="Search by name, hex, RGB, or CMYK...">
+                </div>
+                
+                <div class="filter-sort">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+                            <span>Filter</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="filter-section">
+                                <h4>Tags</h4>
+                                <div class="filter-options" id="tag-filters">
+                                    <!-- Tags will be dynamically inserted here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <button class="dropdown-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 16 4 4 4-4"></path><path d="M7 20V4"></path><path d="m21 8-4-4-4 4"></path><path d="M17 4v16"></path></svg>
+                            <span>Sort</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <button class="sort-option active" data-sort="name">Name</button>
+                            <button class="sort-option" data-sort="id">ID</button>
+                            <button class="sort-option" data-sort="random">Random</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="palette-grid" id="palette-grid">
+                <!-- Palettes will be dynamically inserted here -->
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading palettes...</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Palette Detail Modal -->
+        <div id="palette-detail" class="modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <button class="close-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+                
+                <div class="palette-preview">
+                    <div class="visualization-container">
+                        <!-- Dynamic visualization will be rendered here -->
+                    </div>
+                    
+                    <div class="palette-info">
+                        <div class="palette-header">
+                            <h2 id="detail-name"></h2>
+                            <button class="favorite-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+                            </button>
+                        </div>
+                        
+                        <div class="tags-container" id="detail-tags"></div>
+                        
+                        <div class="colors-container" id="detail-colors"></div>
+                    </div>
+                </div>
+                
+                <div class="palette-actions">
+                    <button id="copy-palette" class="action-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        <span>Copy All Colors</span>
+                    </button>
+                    <button id="download-svg" class="action-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        <span>Download Graphic</span>
+                    </button>
+                    <button id="generate-code" class="action-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        <span>Generate Code</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code Generation Modal -->
+        <div id="code-modal" class="modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <button class="close-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+                
+                <div class="code-container">
+                    <h2>Code Snippets</h2>
+                    
+                    <div class="code-tabs">
+                        <button class="code-tab active" data-tab="css">CSS</button>
+                        <button class="code-tab" data-tab="sass">SASS</button>
+                        <button class="code-tab" data-tab="tailwind">Tailwind</button>
+                    </div>
+                    
+                    <div class="code-content">
+                        <div class="code-panel active" id="css-panel">
+                            <pre><code id="css-code"></code></pre>
+                        </div>
+                        <div class="code-panel" id="sass-panel">
+                            <pre><code id="sass-code"></code></pre>
+                        </div>
+                        <div class="code-panel" id="tailwind-panel">
+                            <pre><code id="tailwind-code"></code></pre>
+                        </div>
+                    </div>
+                    
+                    <button id="copy-code" class="action-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div class="notification" id="notification">
+            <div class="notification-content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span id="notification-message"></span>
+            </div>
+        </div>
+
+        <!-- Scroll to top button -->
+        <button class="scroll-top" id="scroll-top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
