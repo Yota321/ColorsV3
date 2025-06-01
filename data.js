@@ -824,6 +824,17 @@ const colorPalettes = [
     ],
     tags: ["coastal", "charm", "fresh"]
   }
+ // Palette 76 - Mermaid Dream
+{
+  "id": 76,
+  "name": "Mermaid Dream",
+  "colors": [
+    { "hex": "#2E8B57", "rgb": "46, 139, 87", "cmyk": "67, 0, 37, 45" },
+    { "hex": "#005F73", "rgb": "0, 95, 115", "cmyk": "100, 17, 0, 55" },
+    { "hex": "#FF6F61", "rgb": "255, 111, 97", "cmyk": "0, 56, 62, 0" }
+  ],
+  "tags": ["oceanic", "vibrant", "fantasy"]
+}
 ];
 
 // Export for use in other files
